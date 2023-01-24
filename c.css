@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+div.page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.two{
+    background: rgb(0, 100, 0);
+    text-align: center;
+}
+div.two ul{
+    display: inline-flex;
+}
+div.two ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+div.two ul a{
+    color:white;
+    display: block;
+    padding: 15px 25px;
+
+}
+div.two ul a:hover{
+    background-color: blueviolet;
+}
+ul li section{
+    display: none;
+}
+div.page ul li:hover section{
+    display: block;
+    background: rgb(0, 100, 0);
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+div.page ul li:hover section ul{
+    display: block;
+}
+div.page ul li:hover section ul li{
+    width: 150px;
+    border-bottom: 1px dotted white;
+    text-align: left;
+    background: transparent;
+}
+div.page ul li:hover section ul li:last-child{
+    border-bottom:none
+}
